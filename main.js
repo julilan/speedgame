@@ -39,8 +39,8 @@ const clickCircle = (i) => {
   if (i !== active) {
     return endGame()
   }
-  score ++
-  rounds --
+  score += 1
+  rounds -= 1
   scoreSpan.textContent = score
   clickSound.play()
 }
