@@ -44,4 +44,4 @@ Margit Tennosaar
 
 - GitHub @margittennosaar
 - Teacher for the course
-- Game logic follows her example
+- Game core functionality follows her example
