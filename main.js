@@ -23,7 +23,7 @@ const startSound = new Audio('shuffle_sound.wav')
 startSound.volume = 0.3
 
 // game
-const getRndInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
 circles.forEach((circle, i) => {
   circle.addEventListener('click', () => clickCircle(i))
@@ -39,14 +39,14 @@ const clickCircle = (i) => {
   if (i !== active) {
     return endGame()
   }
-  score += 1
-  rounds -= 1
+  score ++
+  rounds --
   scoreSpan.textContent = score
   clickSound.play()
 }
 
 const startGame = () => {
-  if (rounds >= 3) {
+  if (rounds >= 3) { // 3 missed rounds -> endgame
     return endGame()
   }
 
@@ -66,7 +66,7 @@ const startGame = () => {
   pace -= 10
 
   function pickNew (active) {
-    const nextActive = getRndInt(0, 3)
+    const nextActive = getRandomNumber(0, 3)
     if (nextActive !== active) {
       return nextActive
     }
@@ -78,9 +78,9 @@ const endGame = () => {
   overlay.style.visibility = 'visible'
   console.log('game ended')
   clearTimeout(timer)
-  if (score <= 4) {
+  if (score <= 8) {
     endMessage.textContent = 'Did you take an arrow in the knee?'
-  } else if (score <= 7) {
+  } else if (score <= 20) {
     endMessage.textContent = 'Quite good!'
   } else {
     endMessage.textContent = 'GG! You could climb a mountain!'
