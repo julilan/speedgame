@@ -76,7 +76,6 @@ const startGame = () => {
 
 const endGame = () => {
   overlay.style.visibility = 'visible'
-  console.log('game ended')
   clearTimeout(timer)
   if (score <= 8) {
     endMessage.textContent = 'Did you take an arrow in the knee?'
