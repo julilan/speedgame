@@ -27,6 +27,7 @@ Game starts when the user clicks the Start button. User has to click the active/
 
 End conditions are
 
+- clicking wrong circle
 - 3 missed rounds
 - clicking the End button
 
