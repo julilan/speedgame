@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f7de;
+    background-image: linear-gradient(to right bottom, #526c2d, #1f5c3e, #004845, #0f333c, #191f25);
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    max-width: 1200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.circle {
+    background-color: #191f25;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    pointer-events: none;
+}
+
+.circle.active {
+    background-color: #325553;
+    background-image: url('flag.svg');
+    background-size: cover;
+}
+
+button {
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #191f25;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.hidden {
+    display: none;
+}
+
+/* overlay modal */
+
+.overlay {
+    background-color: rgba(51, 51, 51, 0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #004845;
+    color:white;
+    height: 30vh;
+    width: 40vw;
+    padding: 2rem;
+    border-radius: 15px;
+    position: relative;
+}
+
+.modal p {
+    margin: 1rem 0 0;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.modal button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* mobile support */
+@media (max-width:600px) {
+    .game {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal {
+        height: 40vh;
+        width: 80vw;
+    }
+}

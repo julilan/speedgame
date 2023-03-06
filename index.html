@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Speedgame</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>Find the flags!</h1>
+        <h1><span class="score">0</span></h1>
+      </div>
+      <div class="game">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div class>
+        <button id="start">Start</button>
+        <button id="end" class="hidden">End</button>
+      </div>
+      <div class="overlay">
+        <div class="modal">
+          <p>Total found: <span class="scoreEnd">0</span></p>
+          <p id="message"></p>
+          <button id="close">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
