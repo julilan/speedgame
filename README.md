@@ -33,16 +33,20 @@ End conditions are
 
 ## Screenshot
 
-![Screenshot of the speedgame](speedgame_screenshot.png)
+![Screenshot of the speedgame](images/speedgame_screenshot.jpg)
+
+## Sources
+
+### README
+
+- README template from [markdown_study_materials](https://github.com/margittennosaar/markdown_study_materials/blob/master/README-template.md)
+
+### Speedgame
+
+- Margit Tennosaar @margittennosaar (Teacher): game functionality of speedgame copied from live coding session
 
 ## Authors and acknowledgment
 
 Juli Molnár
 
 - GitHub @julilan
-
-Margit Tennosaar
-
-- GitHub @margittennosaar
-- Teacher for the course
-- Game core functionality follows her example
