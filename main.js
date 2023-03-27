@@ -15,15 +15,15 @@ let rounds = 0
 let pace = 1000
 
 // sounds
-const clickSound = new Audio('click.wav')
+const clickSound = new Audio('sounds/click.wav')
 clickSound.volume = 0.1
-const endSound = new Audio('game_end.wav')
+const endSound = new Audio('sounds/game_end.wav')
 endSound.volume = 0.1
-const startSound = new Audio('shuffle_sound.wav')
+const startSound = new Audio('sounds/shuffle_sound.wav')
 startSound.volume = 0.3
 
 // game
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
 circles.forEach((circle, i) => {
   circle.addEventListener('click', () => clickCircle(i))
@@ -66,7 +66,7 @@ const startGame = () => {
   pace -= 10
 
   function pickNew (active) {
-    const nextActive = getRandomNumber(0, 3)
+    const nextActive = getRandomInteger(0, 3)
     if (nextActive !== active) {
       return nextActive
     }

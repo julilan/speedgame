@@ -33,7 +33,7 @@ End conditions are
 
 ## Screenshot
 
-![Screenshot of the speedgame](images/speedgame_screenshot.jpg)
+![Screenshot of the speedgame](assets/speedgame_screenshot.jpg)
 
 ## Sources
 

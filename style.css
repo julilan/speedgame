@@ -46,7 +46,7 @@ h1 {
 
 .circle.active {
     background-color: #325553;
-    background-image: url('flag.svg');
+    background-image: url('assets/flag.svg');
     background-size: cover;
 }
 
