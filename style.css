@@ -15,7 +15,6 @@ body {
     align-items: center;
     min-height: 100vh;
     color: white;
-    max-width: 1200px;
 }
 
 h1 {
@@ -86,8 +85,8 @@ button {
 .modal {
     background-color: #004845;
     color:white;
-    height: 50vh;
-    width: 40vw;
+    min-height: 30vh;
+    min-width: 20vw;
     padding: 2rem;
     border-radius: 15px;
     position: relative;
