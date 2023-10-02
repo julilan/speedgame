@@ -47,4 +47,4 @@ Julianna Molnár
 
 - GitHub @julilan
 
-Kudos to Margit @margittennosaar for guidance 👏
+Kudos to Margit [@margittennosaar](https://github.com/margittennosaar) for guidance 👏
