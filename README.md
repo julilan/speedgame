@@ -41,12 +41,10 @@ End conditions are
 
 - README template from [markdown_study_materials](https://github.com/margittennosaar/markdown_study_materials/blob/master/README-template.md)
 
-### Speedgame
-
-- Margit Tennosaar @margittennosaar (Teacher): game functionality of speedgame copied from live coding session
-
 ## Authors and acknowledgment
 
-Juli Molnár
+Julianna Molnár
 
 - GitHub @julilan
+
+Kudos to Margit @margittennosaar for guidance 👏
