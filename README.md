@@ -2,12 +2,12 @@
 
 Speedgame project made for JavaScript course in Business College Helsinki's REACT23K group.
 
-Main practise goals for building the game are
+Main practise goals for building this game are
 
-- following ESLint code standard
-- getting used to HTML DOM
-- how to use setTimeout
-- adding sounds
+- ESLint code standard
+- HTML DOM
+- setTimeout
+- sounds
 
 ## Technologies used
 
